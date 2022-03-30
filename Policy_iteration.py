@@ -72,8 +72,7 @@ class PolicyIteration:
         return self.value_table[state[0]][state[1]]
     
     
-if __name__ == "__main__":
-    env=Env()
-    policy_iteration=PolicyIteration(env)
-    grid_world=GraphicDisplay(policy_iteration)
-    grid_world.mainloop()
+env=Env()
+policy_iteration=PolicyIteration(env)
+grid_world=GraphicDisplay(policy_iteration)
+grid_world.mainloop()
