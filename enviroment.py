@@ -3,16 +3,16 @@ from tkinter import Button, PhotoImage
 import time
 from cv2 import circle, rectangle
 import numpy as np
-from PIL import ImageTK,Image
+from PIL import ImageTk,Image
 from sympy import Triangle
 
-PhotoImage = ImageTK,PhotoImage
+PhotoImage = ImageTk,PhotoImage
 UNIT=100
 HEIGHT=5
 WIDTH=5
 TRANSITION_PROB=1
-POSSIBLE_ACTION=[0,1,2,3]
-ACTION=[(-1,0),(1,0),(0,-1),(0,1)]
+POSSIBLE_ACTIONS=[0,1,2,3]
+ACTIONS=[(-1,0),(1,0),(0,-1),(0,1)]
 REWARDS=[]
 
 class GraphicDisplay(tk.Tk):
