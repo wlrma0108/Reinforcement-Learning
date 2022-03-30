@@ -65,4 +65,15 @@ class PolicyIteration:
         policy=np.array(policy)
         return np.random.choice(4,1,p=policy)[0]
     
-    def
+    def get_policy(self,state):
+        return self.policy_table[state[0]][state[1]]
+    
+    def get_value(self,state):
+        return self.value_table[state[0]][state[1]]
+    
+    
+if __name__ == "__main__":
+    env=Env()
+    policy_iteration=PolicyIteration(env)
+    grid_world=GraphicDisplay(policy_iteration)
+    grid_world.mainloop()
