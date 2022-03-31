@@ -1,6 +1,7 @@
 from unittest import result
 import numpy as np
 from enviroment import GraphicDisplay, Env
+import os
 
 class PolicyIteration:
     def __init__(self,env):
